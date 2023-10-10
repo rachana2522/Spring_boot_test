@@ -11,6 +11,9 @@ import com.cozentus.Assess.Model.Product;
 public interface ProductRepository extends JpaRepository<Product, Integer> {
 	
 	List<Product> findByCategory_Id(Integer categoryId);
+	List<Product> findByCategoryIdAndIsActiveOrderByViewsDesc(Integer categoryId, boolean isActive);
+
+    void deleteByCategoryId(Integer categoryId);
 }
 
 

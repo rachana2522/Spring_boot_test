@@ -54,8 +54,8 @@ public class Product {
 		return name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setName(String updatedProduct2) {
+		this.name = updatedProduct2;
 	}
 
 	public String getBrand() {
@@ -128,6 +128,9 @@ public class Product {
 				+ ", unitPrice=" + unitPrice + ", quantity=" + quantity + ", isActive=" + isActive + ", category="
 				+ category + ", purchases=" + purchases + ", views=" + views + "]";
 	}
+
+    public void setName(Product updatedProduct2) {
+    }
 
 }
 

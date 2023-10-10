@@ -25,14 +25,14 @@ public class ProductService {
 		return productRepository.save(product);
 	}
 	
-	public Product updateProduct(Integer id, String newName) {
+	public Product updateProduct(Integer id, Product updatedProduct2) {
         // Delete the existing product
         productRepository.deleteById(id);
 
         // Create a new product with the updated name
         Product updatedProduct = new Product();
         updatedProduct.setId(id);
-        updatedProduct.setName(newName);
+        updatedProduct.setName(updatedProduct2);
 
         // Save the updated product
         return productRepository.save(updatedProduct);
@@ -48,4 +48,13 @@ public class ProductService {
 			productRepository.delete(product); 
 		} 
 	}
+
+    // public Product updateProduct(Integer id, Product updatedProduct) {
+    //     Product existingProduct = productRepository.findById(id).orElse(null);
+    //     if (existingProduct != null) {
+
+    //         return productRepository.save(existingProduct);
+    //     }
+    //     return null;
+    // }
 }
