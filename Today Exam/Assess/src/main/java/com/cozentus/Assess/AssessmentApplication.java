@@ -1,13 +1,13 @@
-package com.example.Cozentus;
+package com.cozentus.Assess;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TodayExamApplication {
+public class AssessmentApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TodayExamApplication.class, args);
+		SpringApplication.run(AssessmentApplication.class, args);
 	}
 
 }
