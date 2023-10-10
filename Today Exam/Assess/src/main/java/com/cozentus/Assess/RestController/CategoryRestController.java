@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cozentus.Assess.Model.Category;
 import com.cozentus.Assess.Service.CategoryService;
 
+@CrossOrigin(allowedHeaders = "*" , origins = "*")
 @RestController
 public class CategoryRestController {
 	

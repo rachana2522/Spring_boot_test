@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.cozentus.Assess.Model.Product;
 import com.cozentus.Assess.Service.ProductService;
-
 @RestController
+@CrossOrigin(allowedHeaders = "*" , origins = "*")
 public class ProductRestController {
 	
 	@Autowired
